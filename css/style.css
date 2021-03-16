@@ -1,0 +1,97 @@
+:root {
+    --red: #E50914;
+    --black: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+    font-family: 'Roboto', 'sans-serif';
+}
+body {
+    min-height: 100vh;
+    background-color: var(--black);
+    font-family: "Times New Roman", Times, serif;
+    color: white;
+}
+header{
+    width: 100vw;
+    padding: 4px 0;
+}
+.headerContainer{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header #logo h1{
+    font-family: 'Arial Black', Times;
+    color: var(--red);
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+header nav a{
+    margin-right: 10px;
+    color: #aaa;
+}
+header nav a:hover{
+    color: white;
+}
+main{
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)100%), url('../assets/capa-house.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: 0 30%;
+}
+.mainContainer{
+    width: 95%;
+    margin: 0 auto;   
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.mainContainer .information{
+    width: 40%;
+}
+.mainContainer .information h2{
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+.mainContainer .information p{
+    margin-bottom: 10px;
+}
+.mainContainer .buttons{
+    margin: 25px 0;
+}
+.buttonContainer {
+    display: flex;
+    align-items: center;
+}
+.buttonContainer i{
+    margin-right: 8px;
+}
+.mainContainer .buttons button{
+    padding: 15px 30px ;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: .3s ease all;
+    text-transform: uppercase;
+}
+.mainContainer .buttons button:hover{
+    background-color: white;
+    color: black;
+}
+.imgMini{
+    height: 100%;
+    width: 100%;
+    display: block;
+
+}
